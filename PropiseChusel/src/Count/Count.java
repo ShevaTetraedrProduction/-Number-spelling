@@ -1,15 +1,17 @@
 package Count;
 
 public class Count {
-    private int count;
+    private int cnt;
+
     public void setNumber(float s) {
-        count = (int) s;
+        cnt = (int) s;
     }
+
     public int getNumber() {
-        return count;
+        return cnt;
     }
 
     public void start() {
-        System.out.println(count/120);
+        System.out.println(cnt / 120);
     }
 }

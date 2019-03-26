@@ -1,5 +1,5 @@
 
-package chuslo;
+package Chuslo;
 
 import java.util.Scanner;
 
@@ -48,7 +48,7 @@ public class Chuslo {
         if (thous >= 2 && thous < 5) result = valut[1];
         if (thous >= 5 && thous < 10) result = valut[2];
         if (thous >= 10 && thous < 20) result = valut[2];
-         else result=valut[2];
+        else result = valut[2];
         return result;
     }
 

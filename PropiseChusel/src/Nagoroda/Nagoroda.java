@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package nagoroda;
+package Nagoroda;
 
 import java.util.Scanner;
 
@@ -12,6 +12,8 @@ import java.util.Scanner;
  */
 public class Nagoroda {
     Scanner in = new Scanner(System.in);
+
+
     private int suma;
 
     public void setNumber(float s) {
@@ -40,17 +42,7 @@ public class Nagoroda {
             result = 1100;
         } else if (suma <= 200000 && suma > 150000) {
             result = 1100;
-        } else if (suma <= 250000 && suma > 200000) {
-            result = 1300;
-        } else if (suma <= 300000 && suma > 250000) {
-            result = 1300;
-        } else if (suma <= 350000 && suma > 300000) {
-            result = 1300;
-        } else if (suma <= 400000 && suma > 350000) {
-            result = 1300;
-        } else if (suma <= 450000 && suma > 400000) {
-            result = 1300;
-        } else if (suma <= 500000 && suma > 450000) {
+        } else if (suma <= 500000 && suma > 200000) {
             result = 1300;
         } else if (suma > 500000) {
             result = 1300;
@@ -105,7 +97,6 @@ public class Nagoroda {
 
     public int count() {
         int result = round(sumaAddpercent(suma) + taryf() + add250());
-        //System.out.println("Результат->"+result);
         System.out.println(result);
         return 0;
     }
